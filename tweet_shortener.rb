@@ -33,5 +33,7 @@ def dictionary(word)
 end
 
 def bulk_tweet_shortener(tweets)
-  puts tweets.length
+  tweets.each do |tweet|
+    puts word_substituter(tweet)
+  end
 end
