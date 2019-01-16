@@ -12,7 +12,7 @@ def word_substituter(tweet)
 end
 
 def dictionary(word)
-  word.downcase
+  word = word.downcase
   dictionary_hash = {
     "hello" => "hi",
     "to" => "2",
