@@ -12,7 +12,6 @@ def word_substituter(tweet)
 end
 
 def dictionary(word)
-  word = word.downcase
   dictionary_hash = {
     "hello" => "hi",
     "to" => "2",
@@ -26,7 +25,7 @@ def dictionary(word)
     "and" => "&"
   }
   
-  if dictionary_hash.keys.include? word
+  if dictionary_hash.keys.include? word.downcase
     return dictionary_hash.fetch(word)
   end
   return word
