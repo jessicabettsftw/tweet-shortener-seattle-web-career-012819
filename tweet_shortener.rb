@@ -26,7 +26,7 @@ def dictionary(word)
   }
   
   if dictionary_hash.keys.include? word.downcase
-    return dictionary_hash.fetch(word)
+    return dictionary_hash.fetch(word.downcase)
   end
   return word
 end
